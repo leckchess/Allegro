@@ -5,11 +5,16 @@ using UnityEngine;
 public class InputManager : MonoBehaviour
 {
     [Header("Keys")]
-    public KeyCode interactionKey = KeyCode.E;
+
+    [SerializeField]
+    private KeyCode interactionKey = KeyCode.E;
 
     [Header("Interaction")]
-    public float interactionDistance = 5.0f;
-    public LayerMask interactableLayer;
+
+    [SerializeField]
+    private float interactionDistance = 5.0f;
+    [SerializeField]
+    private LayerMask interactableLayer;
 
 
     // private section
