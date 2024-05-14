@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,7 +13,7 @@ public class InputManager : MonoBehaviour
     [Header("Interaction")]
 
     [SerializeField]
-    private float interactionDistance = 5.0f;
+    private float interactionDistance = 10.0f;
     [SerializeField]
     private LayerMask interactableLayer;
 
@@ -23,7 +24,7 @@ public class InputManager : MonoBehaviour
     void Update()
     {
         #region Interaction
-        Ray ray = new Ray(transform.position, transform.forward);
+        Ray ray = new Ray(Camera.main.transform.position, Camera.main.transform.forward);
         RaycastHit hit;
 
         if (Physics.Raycast(ray, out hit, interactionDistance, interactableLayer))
