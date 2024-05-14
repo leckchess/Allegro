@@ -3,10 +3,20 @@ using UnityEngine;
 [RequireComponent(typeof(CharacterController))]
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField]
-    private float walkSpeed = 5f; 
-    [SerializeField]
-    private float runSpeed = 10f;
+    [SerializeField] private float _walkSpeed = 5f;
+    [SerializeField] private float _runSpeed = 10f;
+
+    public float WalkSpeed
+    {
+        get { return _walkSpeed; }
+        set { _walkSpeed = value; }
+    }
+
+    public float RunSpeed
+    {
+        get { return _runSpeed; }
+        set { _runSpeed = value; }
+    }
 
     private CharacterController controller;
 
@@ -22,7 +32,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void HandleMovement()
     {
-       
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
 
@@ -44,7 +53,7 @@ public class PlayerMovement : MonoBehaviour
     {
         bool isRunning = Input.GetKey(KeyCode.LeftShift);
 
-        float speed = isRunning ? runSpeed : walkSpeed;
+        float speed = isRunning ? RunSpeed : WalkSpeed;
         return speed;
     }
 
