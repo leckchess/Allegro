@@ -427,7 +427,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 122973310}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.018189488, y: 0.000000017203536, z: 3.1297526e-10, w: 0.9998346}
+  m_LocalRotation: {x: -0.018189488, y: -0.000000017203536, z: -3.1297526e-10, w: 0.9998346}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2637,8 +2637,7 @@ GameObject:
   - component: {fileID: 1503083604}
   - component: {fileID: 1503083603}
   - component: {fileID: 1503083602}
-  - component: {fileID: 1503083607}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2743,23 +2742,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1503083607
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1503083601}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02e7523fe9eacb14794ce8e94a9fb496, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactionKey: 101
-  interactionDistance: 100
-  interactableLayer:
-    serializedVersion: 2
-    m_Bits: 4294967295
 --- !u!1 &1806064671
 GameObject:
   m_ObjectHideFlags: 0
@@ -2774,6 +2756,7 @@ GameObject:
   - component: {fileID: 1806064674}
   - component: {fileID: 1806064673}
   - component: {fileID: 1806064672}
+  - component: {fileID: 1806064678}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -2795,7 +2778,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _walkSpeed: 5
   _runSpeed: 10
-  _turnSmoothTime: 0.1
+  _turnSmoothTime: 0.05
   _camera: {fileID: 963194228}
 --- !u!143 &1806064673
 CharacterController:
@@ -2912,6 +2895,23 @@ Transform:
   - {fileID: 893906992}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1806064678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1806064671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02e7523fe9eacb14794ce8e94a9fb496, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionKey: 101
+  interactionDistance: 100
+  interactableLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &1958879045
 GameObject:
   m_ObjectHideFlags: 0
