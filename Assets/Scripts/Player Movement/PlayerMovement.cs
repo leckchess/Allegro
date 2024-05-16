@@ -1,10 +1,14 @@
 using UnityEngine;
+using UnityEngine.UIElements;
+using Cursor = UnityEngine.Cursor;
 
 [RequireComponent(typeof(CharacterController))]
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float _walkSpeed = 5f;
     [SerializeField] private float _runSpeed = 10f;
+    [SerializeField] private float _turnSmoothTime = 0.1f;
+    [SerializeField] private Transform _camera;
 
     public float WalkSpeed
     {
@@ -22,6 +26,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Awake()
     {
+        Cursor.lockState = CursorLockMode.Locked;
         controller = GetComponent<CharacterController>();
     }
 
@@ -37,16 +42,23 @@ public class PlayerMovement : MonoBehaviour
 
         Vector3 moveDirection = CalculateMoveDirection(horizontalInput, verticalInput);
 
+        if (moveDirection.magnitude < 0.1f) return;
         float speed = DetermineMovementSpeed();
 
-        MovePlayer(moveDirection, speed);
+
+        var targetAngle = Mathf.Atan2(moveDirection.x, moveDirection.z) * Mathf.Rad2Deg + _camera.eulerAngles.y;
+        float currentVelocity = 0;
+        var angle = Mathf.SmoothDampAngle(transform.rotation.eulerAngles.y, targetAngle, ref currentVelocity,
+            _turnSmoothTime);
+        transform.rotation = Quaternion.Euler(0, angle, 0);
+        MovePlayer((transform.rotation * Vector3.forward).normalized, speed);
     }
 
     private Vector3 CalculateMoveDirection(float horizontalInput, float verticalInput)
     {
         // Normalize
         Vector3 moveDirection = new Vector3(horizontalInput, 0f, verticalInput).normalized;
-        return transform.TransformDirection(moveDirection);
+        return moveDirection; //transform.TransformDirection(moveDirection);
     }
 
     private float DetermineMovementSpeed()
