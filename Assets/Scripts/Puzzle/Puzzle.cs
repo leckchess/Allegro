@@ -6,9 +6,7 @@ using Random = UnityEngine.Random;
 
 public class Puzzle : MonoBehaviour
 {
-    [SerializeField] private Vector2 _boardSizeInCells;
     [SerializeField] private PuzzlePiece _puzzlePiecePrefab;
-    [SerializeField] private Texture _texture;
     [SerializeField] private RectTransform _parent;
     [SerializeField] private RawImage _image;
 
@@ -19,19 +17,19 @@ public class Puzzle : MonoBehaviour
 
     public event Action OnPuzzleSolved;
 
-    void Start()
+    public void StartPuzzle(Vector2 boardSizeInCells, Texture texture)
     {
         Reset();
 
         int i = 0;
-        var pieceSize = new Vector2(_parent.sizeDelta.x / _boardSizeInCells.x,
-            _parent.sizeDelta.y / _boardSizeInCells.y);
+        var pieceSize = new Vector2(_parent.sizeDelta.x / boardSizeInCells.x,
+            _parent.sizeDelta.y / boardSizeInCells.y);
 
-        _piecesCount = (int)(_boardSizeInCells.x * _boardSizeInCells.y);
+        _piecesCount = (int)(boardSizeInCells.x * boardSizeInCells.y);
 
-        for (int j = 0; j < _boardSizeInCells.x; j++) //col
+        for (int j = 0; j < boardSizeInCells.x; j++) //col
         {
-            for (int k = 0; k < _boardSizeInCells.y; k++) //row
+            for (int k = 0; k < boardSizeInCells.y; k++) //row
             {
                 var piece = Instantiate(_puzzlePiecePrefab, _parent);
                 var pieceTransform = (RectTransform)piece.transform;
@@ -43,13 +41,15 @@ public class Puzzle : MonoBehaviour
                 var cell = new Vector2(k, j);
                 var targetPosition = cell * pieceSize;
                 targetPosition.y = -targetPosition.y;
-                piece.Init(_texture, cell, _boardSizeInCells, targetPosition);
+                piece.Init(texture, cell, boardSizeInCells, targetPosition);
                 piece.OnPiecePlaced += OnPiecePlaced;
                 _peices.Add(piece.gameObject);
             }
         }
 
-        _image.texture = _texture;
+        _image.texture = texture;
+        
+        gameObject.SetActive(true);
     }
 
     private void Reset()
