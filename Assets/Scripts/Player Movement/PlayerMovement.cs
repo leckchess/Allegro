@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.UIElements;
 using Cursor = UnityEngine.Cursor;
 
 [RequireComponent(typeof(CharacterController))]
@@ -9,6 +8,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float _runSpeed = 10f;
     [SerializeField] private float _turnSmoothTime = 0.1f;
     [SerializeField] private Transform _camera;
+
+    private float _resistanceSpeed;
 
     public float WalkSpeed
     {
@@ -42,8 +43,9 @@ public class PlayerMovement : MonoBehaviour
 
         Vector3 moveDirection = CalculateMoveDirection(horizontalInput, verticalInput);
 
-        if (moveDirection.magnitude < 0.1f) return;
-        float speed = DetermineMovementSpeed();
+        bool hasInput = moveDirection.magnitude >= 0.1f;
+        if (!hasInput && Mathf.Approximately(_resistanceSpeed, 0)) return;
+        float speed = hasInput ? DetermineMovementSpeed() : 0;
 
 
         var targetAngle = Mathf.Atan2(moveDirection.x, moveDirection.z) * Mathf.Rad2Deg + _camera.eulerAngles.y;
@@ -71,7 +73,12 @@ public class PlayerMovement : MonoBehaviour
 
     private void MovePlayer(Vector3 moveDirection, float speed)
     {
-        Vector3 move = (moveDirection * speed  + 10 * Vector3.down) *Time.deltaTime ;
+        Vector3 move = (moveDirection * speed - moveDirection * _resistanceSpeed + 10 * Vector3.down) * Time.deltaTime;
         controller.Move(move);
+    }
+
+    public void SetResistanceSpeed(float resistanceSpeed)
+    {
+        _resistanceSpeed = resistanceSpeed;
     }
 }
