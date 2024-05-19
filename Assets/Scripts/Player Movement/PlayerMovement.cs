@@ -71,7 +71,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void MovePlayer(Vector3 moveDirection, float speed)
     {
-        Vector3 move = moveDirection * speed * Time.deltaTime;
+        Vector3 move = (moveDirection * speed  + 10 * Vector3.down) *Time.deltaTime ;
         controller.Move(move);
     }
 }
