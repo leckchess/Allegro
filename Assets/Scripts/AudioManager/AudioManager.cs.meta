@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: d0e81078394e54cf7a9195e96c659e55
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - bgMusicSourcePrefab: {fileID: 8310204774197600980, guid: 6cc0ce0c7bf0643bc99ed92a521bfcf9, type: 3}
+  - sfxSourcePrefab: {fileID: 6206683195193148019, guid: 1e2f0d4290e9d469d9325934ed1b38ba, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
