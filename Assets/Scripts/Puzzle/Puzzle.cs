@@ -9,6 +9,7 @@ public class Puzzle : MonoBehaviour
     [SerializeField] private PuzzlePiece _puzzlePiecePrefab;
     [SerializeField] private RectTransform _parent;
     [SerializeField] private RawImage _image;
+    [SerializeField] private PuzzlesData _data;
 
     private int _placedPiecesCount;
     private int _piecesCount;
@@ -17,10 +18,15 @@ public class Puzzle : MonoBehaviour
 
     public event Action OnPuzzleSolved;
 
+    public void StartPuzzle(int puzzleId)
+    {
+        StartPuzzle(_data.Data[puzzleId].Size, _data.Data[puzzleId].Image);
+    }
+
     public void StartPuzzle(Vector2 boardSizeInCells, Texture texture)
     {
         Reset();
-
+        
         int i = 0;
         var pieceSize = new Vector2(_parent.sizeDelta.x / boardSizeInCells.x,
             _parent.sizeDelta.y / boardSizeInCells.y);

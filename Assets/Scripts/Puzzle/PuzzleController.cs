@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
-    public class PuzzleController : MonoBehaviour
+public class PuzzleController : MonoBehaviour
     {
         [SerializeField] private Puzzle _puzzle;
         [SerializeField] private PuzzlesData _data;
+        [SerializeField] private UnityEvent<int> _onPuzzlePiecesCollected;
 
         private Dictionary<int, int> _collectedPieces = new Dictionary<int, int>();
 
@@ -22,7 +24,7 @@ using UnityEngine;
                 if (_collectedPieces[puzzleId] >= _data.Data[puzzleId].PiecesCount)
                 {
                     Cursor.lockState = CursorLockMode.None;
-                    _puzzle.StartPuzzle(_data.Data[puzzleId].Size, _data.Data[puzzleId].Image);
+                    _onPuzzlePiecesCollected.Invoke(puzzleId);
                 }
             }
             else
