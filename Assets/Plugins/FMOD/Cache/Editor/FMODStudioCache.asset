@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: Assets/FMOD-Banks/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638519012277381925
+  lastModified: 638521579420000000
   FileSizes: []
   Exists: 1
 --- !u!114 &-6760552770492876470
@@ -33,10 +33,10 @@ MonoBehaviour:
   Path: Assets/FMOD-Banks/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638519012277381925
+  lastModified: 638521579420000000
   FileSizes:
   - Name: 
-    Value: 852
+    Value: 902
   Exists: 1
 --- !u!114 &-6245633408288102823
 MonoBehaviour:
@@ -65,7 +65,7 @@ MonoBehaviour:
   - {fileID: -576492865882734304}
   MinDistance: 1
   MaxDistance: 20
-  Length: 86165
+  Length: 481052
 --- !u!114 &-576492865882734304
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -108,13 +108,41 @@ MonoBehaviour:
   - {fileID: 4625521130246644280}
   EditorEvents:
   - {fileID: -6245633408288102823}
+  - {fileID: 4230556221426482991}
   EditorParameters: []
   MasterBanks:
   - {fileID: -8587795892275786888}
   StringsBanks:
   - {fileID: -6760552770492876470}
-  cacheTime: 638519012277457953
+  cacheTime: 638521579420000000
   cacheVersion: 131618
+--- !u!114 &4230556221426482991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/victory
+  m_EditorClassIdentifier: 
+  Path: event:/victory
+  Guid:
+    Data1: -1693536613
+    Data2: 1127184712
+    Data3: 1038989732
+    Data4: 525584807
+  Banks:
+  - {fileID: 4625521130246644280}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 9650
 --- !u!114 &4625521130246644280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -130,6 +158,6 @@ MonoBehaviour:
   Path: Assets/FMOD-Banks/music.bank
   Name: music
   StudioPath: bank:/music
-  lastModified: 638519012277457953
+  lastModified: 638521579420000000
   FileSizes: []
   Exists: 1
