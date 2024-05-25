@@ -4600,6 +4600,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Room-Left -Window
       objectReference: {fileID: 0}
+    - target: {fileID: 8036937374646766562, guid: 0421cf38e71614c4a8a072a325a6aa96, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.39117137
+      objectReference: {fileID: 0}
+    - target: {fileID: 8036937374646766562, guid: 0421cf38e71614c4a8a072a325a6aa96, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.95
+      objectReference: {fileID: 0}
     - target: {fileID: 8515358745544942506, guid: 0421cf38e71614c4a8a072a325a6aa96, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.40524817
