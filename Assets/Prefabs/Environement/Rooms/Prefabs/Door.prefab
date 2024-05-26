@@ -481,9 +481,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eeaba225eade7864fa9a3406184d1fc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HighlightMaterial: {fileID: 0}
+  _highlightMaterial: {fileID: 0}
+  _renderers:
+  - {fileID: 5132848452237757199}
+  - {fileID: 7278186516940830185}
+  - {fileID: 8930481244569866490}
+  - {fileID: 3246884287755295942}
   _door: {fileID: 2081116911959817220}
+  _animator: {fileID: 0}
   _isOpen: 0
+  _IsLocked: 0
+  _Arrow: {fileID: 0}
 --- !u!1 &3357928740246293180
 GameObject:
   m_ObjectHideFlags: 0

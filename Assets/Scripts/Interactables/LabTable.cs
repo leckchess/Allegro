@@ -7,7 +7,7 @@ public class LabTable : Interactable
     [SerializeField] private ParticleSystem _particleSystem;
     [SerializeField] bool _isPlaying = true;
 
-    void Start()
+    void Awake()
     {
         Apply();
     }
