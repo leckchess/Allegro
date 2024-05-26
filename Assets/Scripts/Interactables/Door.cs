@@ -8,6 +8,7 @@ public class Door : Interactable
     [SerializeField] private Transform _door;
     [SerializeField] private bool _isOpen;
     [SerializeField] private bool _IsLocked = false;
+    [SerializeField] private GameObject _Arrow;
 
     private Quaternion _openRotation;
     private Coroutine _rotationCoroutine;
@@ -16,6 +17,7 @@ public class Door : Interactable
     {
         _openRotation = Quaternion.Euler(0, 90, 0);
         _door.localRotation = _isOpen ? _openRotation : Quaternion.identity;
+        Laptop.OnOnlineCallEnded += OnOnlineCallEndedHandle;
     }
 
     public override void Interact()
@@ -27,6 +29,11 @@ public class Door : Interactable
         if (_rotationCoroutine != null) StopCoroutine(_rotationCoroutine);
         _isOpen = !_isOpen;
         _rotationCoroutine = StartCoroutine(Rotate(_isOpen ? _openRotation : Quaternion.identity));
+
+        if (_Arrow)
+        {
+            _Arrow.SetActive(false);
+        }
     }
 
     public void UnLockDoor()
@@ -45,5 +52,15 @@ public class Door : Interactable
         }
 
         _rotationCoroutine = null;
+    }
+
+    public void OnOnlineCallEndedHandle()
+    {
+        UnLockDoor();
+
+        if(_Arrow)
+        {
+            _Arrow.SetActive(true);
+        }
     }
 }

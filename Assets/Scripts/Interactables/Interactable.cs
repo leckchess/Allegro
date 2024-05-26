@@ -3,12 +3,11 @@ using UnityEngine;
 public abstract class Interactable : MonoBehaviour
 {
 
-    [SerializeField]
-    private Material HighlightMaterial = null;
+    [SerializeField] private Material _HighlightMaterial = null;
 
     private void Start()
     {
-        if ((HighlightMaterial == null))
+        if ((_HighlightMaterial == null))
         {
             //HighlightMaterial = gameObject.transform.GetChild(0).GetComponent<Renderer>().materials[1];
         }
@@ -22,23 +21,23 @@ public abstract class Interactable : MonoBehaviour
 
     public virtual void OnHover()
     {
-        if (HighlightMaterial == null)
+        if (_HighlightMaterial == null)
         {
             return;
         }
 
-        HighlightMaterial.SetFloat("_Scale", 1.03f);
+        _HighlightMaterial.SetFloat("_Scale", 1.03f);
         // show ui
         // highlight
     }
     public virtual void OnUnHover()
     {
-        if (HighlightMaterial == null)
+        if (_HighlightMaterial == null)
         {
             return;
         }
 
-        HighlightMaterial.SetFloat("_Scale", 0);
+        _HighlightMaterial.SetFloat("_Scale", 0);
         // hide ui
         // clear highlight
     }
