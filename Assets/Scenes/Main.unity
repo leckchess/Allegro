@@ -1355,8 +1355,6 @@ MonoBehaviour:
   _highlightMaterial: {fileID: 0}
   _renderers:
   - {fileID: 586537313}
-  - {fileID: 748308572}
-  - {fileID: 1727543681}
   _animator: {fileID: 0}
   _CallDuration: 3
   _onOnlineCallEnded:
@@ -13796,8 +13794,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _highlightMaterial: {fileID: 0}
   _renderers:
-  - {fileID: 5186218948316884014}
-  - {fileID: 5186218948316884013}
   - {fileID: 5186218948316884012}
   - {fileID: 5186218948316884011}
   - {fileID: 5186218948316884010}
@@ -22328,12 +22324,12 @@ MonoBehaviour:
   m_RequiresColorTexture: 0
   m_Version: 2
   m_TaaSettings:
-    quality: 3
-    frameInfluence: 0.1
-    jitterScale: 1
-    mipBias: 0
-    varianceClampScale: 0.9
-    contrastAdaptiveSharpening: 0
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
 --- !u!81 &1831148708
 AudioListener:
   m_ObjectHideFlags: 0
@@ -27955,16 +27951,6 @@ MeshRenderer:
 --- !u!23 &5186218948316884012 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 2810089696837942295, guid: ad4058d23798c414cbca2456d0f0139f, type: 3}
-  m_PrefabInstance: {fileID: 5186218948316884009}
-  m_PrefabAsset: {fileID: 0}
---- !u!23 &5186218948316884013 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 3376770621865947930, guid: ad4058d23798c414cbca2456d0f0139f, type: 3}
-  m_PrefabInstance: {fileID: 5186218948316884009}
-  m_PrefabAsset: {fileID: 0}
---- !u!23 &5186218948316884014 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 7741258843293422643, guid: ad4058d23798c414cbca2456d0f0139f, type: 3}
   m_PrefabInstance: {fileID: 5186218948316884009}
   m_PrefabAsset: {fileID: 0}
 --- !u!23 &5398270213763002140
