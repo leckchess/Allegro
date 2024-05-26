@@ -1,6 +1,4 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Door : Interactable
@@ -9,6 +7,7 @@ public class Door : Interactable
 
     [SerializeField] private Transform _door;
     [SerializeField] private bool _isOpen;
+    [SerializeField] private bool _IsLocked = false;
 
     private Quaternion _openRotation;
     private Coroutine _rotationCoroutine;
@@ -22,9 +21,17 @@ public class Door : Interactable
     public override void Interact()
     {
         base.Interact();
+
+        if (_IsLocked) { return; }
+
         if (_rotationCoroutine != null) StopCoroutine(_rotationCoroutine);
         _isOpen = !_isOpen;
         _rotationCoroutine = StartCoroutine(Rotate(_isOpen ? _openRotation : Quaternion.identity));
+    }
+
+    public void UnLockDoor()
+    {
+        _IsLocked = false;
     }
 
     IEnumerator Rotate(Quaternion targetRotation)
