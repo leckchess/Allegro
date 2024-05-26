@@ -1,12 +1,13 @@
 using System;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Phone : Interactable
 {
     [SerializeField] private Animator _animator;
     [SerializeField] private float _CallDuration;
 
-    public static event Action OnPhoneCallEnded;
+    [SerializeField] private UnityEvent OnPhoneCallEnded;
 
     private void Awake()
     {
@@ -28,6 +29,6 @@ public class Phone : Interactable
 
         _animator.SetTrigger("EndCall");
 
-        OnPhoneCallEnded?.Invoke();
+        OnPhoneCallEnded.Invoke();
     }
 }

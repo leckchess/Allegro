@@ -1,17 +1,16 @@
 using System;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Laptop : Interactable
 {
     [SerializeField] private Animator _animator;
     [SerializeField] private float _CallDuration;
-
-    public static event Action OnOnlineCallEnded;
+    [SerializeField] private UnityEvent _onOnlineCallEnded;
 
     private void Awake()
     {
         _animator = GetComponent<Animator>();
-        Phone.OnPhoneCallEnded += OnPhoneCallEndedHandle;
     }
 
     public override void Interact()
@@ -29,7 +28,7 @@ public class Laptop : Interactable
 
         _animator.SetTrigger("Close");
 
-        OnOnlineCallEnded?.Invoke();
+        _onOnlineCallEnded.Invoke();
     }
 
     public void OnPhoneCallEndedHandle()

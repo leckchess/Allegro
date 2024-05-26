@@ -6,6 +6,7 @@ public class Door : Interactable
     private const float TIME = 0.2f;
 
     [SerializeField] private Transform _door;
+    [SerializeField] private Animator _animator;
     [SerializeField] private bool _isOpen;
     [SerializeField] private bool _IsLocked = false;
     [SerializeField] private GameObject _Arrow;
@@ -17,7 +18,6 @@ public class Door : Interactable
     {
         _openRotation = Quaternion.Euler(0, 90, 0);
         _door.localRotation = _isOpen ? _openRotation : Quaternion.identity;
-        Laptop.OnOnlineCallEnded += OnOnlineCallEndedHandle;
     }
 
     public override void Interact()
@@ -33,6 +33,11 @@ public class Door : Interactable
         if (_Arrow)
         {
             _Arrow.SetActive(false);
+        }
+
+        if(_animator)
+        {
+            _animator.enabled = false;
         }
     }
 
@@ -62,5 +67,10 @@ public class Door : Interactable
         {
             _Arrow.SetActive(true);
         }
+    }
+
+    public void OnLastPieceCollectedHandle()
+    {
+        UnLockDoor();
     }
 }
