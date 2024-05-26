@@ -10,7 +10,7 @@ public abstract class Interactable : MonoBehaviour
     {
         if ((HighlightMaterial == null))
         {
-            HighlightMaterial = gameObject.transform.GetChild(0).GetComponent<Renderer>().materials[1];
+            //HighlightMaterial = gameObject.transform.GetChild(0).GetComponent<Renderer>().materials[1];
         }
     }
 

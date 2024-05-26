@@ -3,7 +3,37 @@ guid: ce416e16b7b87a34b88538b50e36b1c2
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black Objects
+    second: {fileID: 2100000, guid: e1c6103a1a656bd42ba6c0d2b5a098d3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Magnet red
+    second: {fileID: 2100000, guid: 5925cb58263d0ba4491033bd6aed8bc4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Silver Objects
+    second: {fileID: 2100000, guid: ed0c6622b0fe4b742ba481905e5f58a8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Transparents Objects
+    second: {fileID: 2100000, guid: e131b8a3e83db314ca7a07e60d802e89, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: White Objects
+    second: {fileID: 2100000, guid: 8073a8dc8ad6d4245b24aa6f5859f530, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: magnifying glass body
+    second: {fileID: 2100000, guid: f2d5ddb8dd743ab4fbde722dbf107062, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
