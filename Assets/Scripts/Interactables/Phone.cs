@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.Events;
+using FMODUnity;
 
 public class Phone : Interactable
 {
@@ -9,9 +10,17 @@ public class Phone : Interactable
 
     [SerializeField] private UnityEvent OnPhoneCallEnded;
 
+    [SerializeField] private StudioEventEmitter phoneRingEmitter;
+    [SerializeField]  private EventReference phonePickUpEvent;
+    [SerializeField]  private EventReference phoneUIDialogeEvent;
+    [SerializeField]  private EventReference phoneCutEvent;
+
+
+
     private void Awake()
     {
         _animator = GetComponent<Animator>();
+        phoneRingEmitter = GetComponent<StudioEventEmitter>();
     }
 
     public override void Interact()
@@ -19,6 +28,13 @@ public class Phone : Interactable
         if (_animator == null) { return; }
 
         _animator.SetTrigger("Answer");
+        if (phoneRingEmitter != null && phoneRingEmitter.IsPlaying())
+        {
+            phoneRingEmitter.Stop();
+            RuntimeManager.PlayOneShot(phonePickUpEvent);
+        }
+
+        RuntimeManager.PlayOneShot(phoneUIDialogeEvent);
 
         Invoke("EndCall", _CallDuration);
     }
@@ -28,6 +44,8 @@ public class Phone : Interactable
         if (_animator == null) { return; }
 
         _animator.SetTrigger("EndCall");
+
+        RuntimeManager.PlayOneShot(phoneCutEvent);
 
         OnPhoneCallEnded.Invoke();
     }
