@@ -6,42 +6,17 @@
 [LOG] OutputCoreAudio::init                    : Maximum hardware read size: 512 samples, Software buffer size: 512 samples, Number of software buffers: 4.
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x4000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 0x3b895b008 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 0x323f91208 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] PlaybackSystem::init                     : done
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
-[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
-[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
-[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
-[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
-[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
-[LOG] SoundI::release                          : Pattern 1 (0x3965cf358)
-[LOG] SoundI::release                          :     Pattern 1 (0x126730bd8)
-[LOG] SoundI::release                          :     Pattern 1 (0x126778868)
-[LOG] SoundI::release                          : Pattern 1 (0x3965584a8)
-[LOG] SoundI::release                          :     Pattern 1 (0x396555098)
-[LOG] SoundI::release                          :     Pattern 1 (0x396547168)
-[LOG] SoundI::release                          : Pattern 1 (0x3965a6a58)
-[LOG] SoundI::release                          :     Pattern 1 (0x39653a198)
-[LOG] SoundI::release                          :     Pattern 1 (0x396524258)
-[LOG] SoundI::release                          : sad4-3 (0x396555868)
-[LOG] SoundI::release                          :     sad4-3 (0x126761d08)
-[LOG] SoundI::release                          :     sad4-3 (0x126730f38)
-[LOG] SoundI::release                          : watertap (2) (0x3965c17d8)
-[LOG] SoundI::release                          :     watertap (2) (0x1267a17b8)
-[LOG] SoundI::release                          :     watertap (2) (0x1267e79f8)
-[LOG] SoundI::release                          :  (0x3965ed278)
-[LOG] SoundI::release                          :     phone (0x39654ae38)
-[LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
 [LOG] Thread::callback                         : FMOD Studio sample load thread finished.
 [LOG] LiveUpdate::release                      : 
 [LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
 [LOG] Thread::callback                         : FMOD stream thread finished.
 [LOG] Thread::callback                         : FMOD mixer thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
 [LOG] SystemI::close                           : Closed.

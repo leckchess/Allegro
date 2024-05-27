@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
 
 public class FirstPerson : MonoBehaviour
 {
@@ -11,8 +12,8 @@ public class FirstPerson : MonoBehaviour
     
     [SerializeField] private float _walkSpeed = 5f;
     [SerializeField] private float _runSpeed = 10f;
-    
-    
+
+
     private float _resistanceSpeed = 0;
 
     [SerializeField] private CharacterController _characterController;
@@ -30,7 +31,6 @@ public class FirstPerson : MonoBehaviour
 
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
-
         _characterController.Move(Time.deltaTime * Speed *(_player.right * horizontal + _player.forward * vertical + 10 *Vector3.down));
         _characterController.Move(Time.deltaTime * -_resistanceSpeed * Vector3.back);
     }
