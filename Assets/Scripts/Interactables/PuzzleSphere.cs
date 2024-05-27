@@ -10,6 +10,7 @@ public class PuzzleSphere : Interactable
     public override void Interact()
     {
         base.Interact();
+        //FMODAudioManager.Instance.PlayHappyMusic();
 
         _puzzle.StartPuzzle(0);
     }

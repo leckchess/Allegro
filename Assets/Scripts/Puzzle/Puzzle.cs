@@ -73,7 +73,10 @@ public class Puzzle : MonoBehaviour
     private void OnPiecePlaced()
     {
         if (++_placedPiecesCount >= _piecesCount)
+        {
             OnPuzzleSolved?.Invoke();
+            FMODAudioManager.Instance.PlayHappyMusic(); 
+        }
     }
 
     Vector2 GetRandomPosition()

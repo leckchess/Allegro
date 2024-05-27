@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: Assets/FMOD-Banks/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638524529640000000
+  lastModified: 638524609520000000
   FileSizes: []
   Exists: 1
 --- !u!114 &-8365062356199219795
@@ -60,10 +60,10 @@ MonoBehaviour:
   Path: Assets/FMOD-Banks/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638524529640000000
+  lastModified: 638524609520000000
   FileSizes:
   - Name: 
-    Value: 2006
+    Value: 2064
   Exists: 1
 --- !u!114 &-6245633408288102823
 MonoBehaviour:
@@ -93,6 +93,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 481052
+--- !u!114 &-5968498583750320945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/puzzle paper move
+  m_EditorClassIdentifier: 
+  Path: event:/puzzle paper move
+  Guid:
+    Data1: 648353495
+    Data2: 1130862025
+    Data3: 437381797
+    Data4: -646410077
+  Banks:
+  - {fileID: -8587795892275786888}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 480
 --- !u!114 &-5787881276732755474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -196,7 +223,7 @@ MonoBehaviour:
   - {fileID: -8587795892275786888}
   IsStream: 0
   Is3D: 1
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
@@ -316,12 +343,13 @@ MonoBehaviour:
   - {fileID: 7502839337717903276}
   - {fileID: 6073064987631982140}
   - {fileID: -4146132458334707675}
+  - {fileID: -5968498583750320945}
   EditorParameters: []
   MasterBanks:
   - {fileID: -8587795892275786888}
   StringsBanks:
   - {fileID: -6760552770492876470}
-  cacheTime: 638524529640000000
+  cacheTime: 638524609520000000
   cacheVersion: 131618
 --- !u!114 &199833896848903925
 MonoBehaviour:
@@ -478,11 +506,11 @@ MonoBehaviour:
   - {fileID: 8396505087738653929}
   IsStream: 0
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 365
+  Length: 390
 --- !u!114 &3913223985611051848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -552,7 +580,7 @@ MonoBehaviour:
   Path: Assets/FMOD-Banks/music.bank
   Name: music
   StudioPath: bank:/music
-  lastModified: 638524529640000000
+  lastModified: 638524609520000000
   FileSizes: []
   Exists: 1
 --- !u!114 &4830737601431620512
@@ -655,8 +683,8 @@ MonoBehaviour:
   Banks:
   - {fileID: -8587795892275786888}
   IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
+  Is3D: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
@@ -703,6 +731,6 @@ MonoBehaviour:
   Path: Assets/FMOD-Banks/sfx.bank
   Name: sfx
   StudioPath: bank:/sfx
-  lastModified: 638524529640000000
+  lastModified: 638524609520000000
   FileSizes: []
   Exists: 1
