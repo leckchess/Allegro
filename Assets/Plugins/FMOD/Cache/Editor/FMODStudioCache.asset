@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: Assets/FMOD-Banks/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638524395840000000
+  lastModified: 638524529640000000
   FileSizes: []
   Exists: 1
 --- !u!114 &-8365062356199219795
@@ -60,10 +60,10 @@ MonoBehaviour:
   Path: Assets/FMOD-Banks/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638524395840000000
+  lastModified: 638524529640000000
   FileSizes:
   - Name: 
-    Value: 1830
+    Value: 2006
   Exists: 1
 --- !u!114 &-6245633408288102823
 MonoBehaviour:
@@ -147,6 +147,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 59000
+--- !u!114 &-4146132458334707675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/dooropen
+  m_EditorClassIdentifier: 
+  Path: event:/dooropen
+  Guid:
+    Data1: -6485081
+    Data2: 1280237588
+    Data3: -182242636
+    Data4: 2062219753
+  Banks:
+  - {fileID: -8587795892275786888}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2774
 --- !u!114 &-1841096084985521758
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -173,7 +200,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 2000
+  Length: 1860
 --- !u!114 &-1100110427822841722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -286,12 +313,15 @@ MonoBehaviour:
   - {fileID: -5366013779257851139}
   - {fileID: -391453451298451502}
   - {fileID: 3439210594596429067}
+  - {fileID: 7502839337717903276}
+  - {fileID: 6073064987631982140}
+  - {fileID: -4146132458334707675}
   EditorParameters: []
   MasterBanks:
   - {fileID: -8587795892275786888}
   StringsBanks:
   - {fileID: -6760552770492876470}
-  cacheTime: 638524395860000000
+  cacheTime: 638524529640000000
   cacheVersion: 131618
 --- !u!114 &199833896848903925
 MonoBehaviour:
@@ -522,9 +552,61 @@ MonoBehaviour:
   Path: Assets/FMOD-Banks/music.bank
   Name: music
   StudioPath: bank:/music
-  lastModified: 638524395840000000
+  lastModified: 638524529640000000
   FileSizes: []
   Exists: 1
+--- !u!114 &4830737601431620512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/notes/Parameter 1
+  m_EditorClassIdentifier: 
+  Name: Parameter 1
+  StudioPath: 
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 2582218963
+    data2: 4066478727
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &6073064987631982140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/notes
+  m_EditorClassIdentifier: 
+  Path: event:/notes
+  Guid:
+    Data1: 741718669
+    Data2: 1275265582
+    Data3: 1889077924
+    Data4: -569305294
+  Banks:
+  - {fileID: -8587795892275786888}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 4830737601431620512}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 7389
 --- !u!114 &6549236495131069458
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -552,6 +634,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1850
+--- !u!114 &7502839337717903276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/highlight
+  m_EditorClassIdentifier: 
+  Path: event:/highlight
+  Guid:
+    Data1: 459116883
+    Data2: 1098649279
+    Data3: 1039346109
+    Data4: -1296810343
+  Banks:
+  - {fileID: -8587795892275786888}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2774
 --- !u!114 &7694589652973138949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -594,6 +703,6 @@ MonoBehaviour:
   Path: Assets/FMOD-Banks/sfx.bank
   Name: sfx
   StudioPath: bank:/sfx
-  lastModified: 638524395860000000
+  lastModified: 638524529640000000
   FileSizes: []
   Exists: 1

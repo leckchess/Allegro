@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using FMODUnity;
 
 public class Door : Interactable
 {
@@ -10,6 +11,7 @@ public class Door : Interactable
     [SerializeField] private bool _isOpen;
     [SerializeField] private bool _IsLocked = false;
     [SerializeField] private GameObject _Arrow;
+    [SerializeField] private EventReference doorEventSound;
 
     private Quaternion _openRotation;
     private Coroutine _rotationCoroutine;
@@ -35,7 +37,10 @@ public class Door : Interactable
             _Arrow.SetActive(false);
         }
 
-        if(_animator)
+        RuntimeManager.PlayOneShot(doorEventSound);
+
+
+        if (_animator)
         {
             _animator.enabled = false;
         }
