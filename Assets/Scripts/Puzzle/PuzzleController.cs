@@ -23,7 +23,6 @@ public class PuzzleController : MonoBehaviour
                 _collectedPieces[puzzleId]++;
                 if (_collectedPieces[puzzleId] >= _data.Data[puzzleId].PiecesCount)
                 {
-                    Cursor.lockState = CursorLockMode.None;
                     _onPuzzlePiecesCollected.Invoke(puzzleId);
                 }
             }

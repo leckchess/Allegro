@@ -6,11 +6,14 @@ public class PuzzleSphere : Interactable
 {
 
     [SerializeField] private Puzzle _puzzle;
+    
 
     public override void Interact()
     {
         base.Interact();
 
+        Cursor.lockState = CursorLockMode.None;
+        FindObjectOfType<FirstPerson>().enabled = false;
         _puzzle.StartPuzzle(0);
     }
 }

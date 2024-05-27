@@ -73,7 +73,11 @@ public class Puzzle : MonoBehaviour
     private void OnPiecePlaced()
     {
         if (++_placedPiecesCount >= _piecesCount)
+        {
             OnPuzzleSolved?.Invoke();
+            gameObject.SetActive(false);
+        }
+            
     }
 
     Vector2 GetRandomPosition()
