@@ -65,6 +65,7 @@ GameObject:
   - component: {fileID: 7901716451112774601}
   - component: {fileID: 2667638521754284388}
   - component: {fileID: 8425135344147501913}
+  - component: {fileID: 1661240688929823993}
   m_Layer: 6
   m_Name: Fan
   m_TagString: Untagged
@@ -80,7 +81,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2890853885170358741}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.28254205, y: 0.64820534, z: 0.6482052, w: -0.2825419}
+  m_LocalRotation: {x: 0.2825408, y: 0.64820576, z: 0.64820576, w: -0.2825408}
   m_LocalPosition: {x: 8.27, y: 1.15, z: -1.37}
   m_LocalScale: {x: 50, y: 50, z: 50}
   m_ConstrainProportionsScale: 0
@@ -109,7 +110,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.03
+  m_Radius: 0.02
   m_Center: {x: 0, y: 0, z: 0.02}
 --- !u!114 &8425135344147501913
 MonoBehaviour:
@@ -129,6 +130,51 @@ MonoBehaviour:
   - {fileID: 7727273793047484972}
   - {fileID: 2435585451505264080}
   _animator: {fileID: 2876704978373839241}
+  fanStartEvent:
+    Guid:
+      Data1: 793269780
+      Data2: 1083845253
+      Data3: 1576527284
+      Data4: -379916010
+    Path: event:/fan
+  fanStopEvent:
+    Guid:
+      Data1: 1653294115
+      Data2: 1227898482
+      Data3: -944034117
+      Data4: -826623631
+    Path: event:/fanswitch
+--- !u!114 &1661240688929823993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2890853885170358741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 793269780
+      Data2: 1083845253
+      Data3: 1576527284
+      Data4: -379916010
+    Path: event:/fan
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &756688374133263592
 PrefabInstance:
   m_ObjectHideFlags: 0

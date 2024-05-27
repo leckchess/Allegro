@@ -751,7 +751,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 193af6ed9da97fb478f169ea6cc1d73f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HighlightMaterial: {fileID: 0}
+  _highlightMaterial: {fileID: 0}
+  _renderers: []
   _puzzleId: 0
 --- !u!4 &257087681
 Transform:
@@ -2067,7 +2068,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 193af6ed9da97fb478f169ea6cc1d73f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HighlightMaterial: {fileID: 0}
+  _highlightMaterial: {fileID: 0}
+  _renderers: []
   _puzzleId: 0
 --- !u!4 &674571460
 Transform:
@@ -2420,7 +2422,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 193af6ed9da97fb478f169ea6cc1d73f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HighlightMaterial: {fileID: 0}
+  _highlightMaterial: {fileID: 0}
+  _renderers: []
   _puzzleId: 0
 --- !u!4 &813183902
 Transform:
@@ -4807,7 +4810,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 193af6ed9da97fb478f169ea6cc1d73f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HighlightMaterial: {fileID: 0}
+  _highlightMaterial: {fileID: 0}
+  _renderers: []
   _puzzleId: 0
 --- !u!135 &1503083608
 SphereCollider:
@@ -11787,11 +11791,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 2145384621
+      Data2: 1185564631
+      Data3: 2034730657
+      Data4: -1687706827
+    Path: event:/music
   Event: 
   PlayEvent: 1
   StopEvent: 2
@@ -11801,8 +11805,8 @@ MonoBehaviour:
   AllowNonRigidbodyDoppler: 0
   Params: []
   OverrideAttenuation: 0
-  OverrideMinDistance: -1
-  OverrideMaxDistance: -1
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!114 &93301665621001558
 MonoBehaviour:
   m_ObjectHideFlags: 0
