@@ -52,6 +52,11 @@ public class FMODAudioManager : MonoBehaviour
         SetMusicParameter(2.0f); // 2 for happy music
     }
 
+    public void PlayMonsterMusic()
+    {
+        SetMusicParameter(5.0f);
+    }
+
     private void SetMusicParameter(float value)
     {
         if (musicEmitter != null && musicEmitter.IsActive)

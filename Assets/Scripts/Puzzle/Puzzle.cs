@@ -75,9 +75,9 @@ public class Puzzle : MonoBehaviour
         if (++_placedPiecesCount >= _piecesCount)
         {
             OnPuzzleSolved?.Invoke();
-            gameObject.SetActive(false);
+            gameObject.SetActive(false);  
+            FMODAudioManager.Instance.PlayHappyMusic(); 
         }
-            
     }
 
     Vector2 GetRandomPosition()

@@ -39,6 +39,18 @@ public class Door : Interactable
 
         RuntimeManager.PlayOneShot(doorEventSound);
 
+        if (!_IsLocked)
+        {
+            if (GetComponent<ChangeSoundParameter>())
+            {
+                GetComponent<ChangeSoundParameter>().changeMusic();
+            }
+            if (GetComponent<StudioEventEmitter>())
+            {
+                GetComponent<StudioEventEmitter>().Stop();
+            }
+        }
+
 
         if (_animator)
         {
@@ -49,13 +61,8 @@ public class Door : Interactable
     public void UnLockDoor()
     {
         _IsLocked = false;
-        if (!_IsLocked)
-        {
-            if (GetComponent<ChangeSoundParameter>())
-            {
-                GetComponent<ChangeSoundParameter>().changeMusic();
-            }
-        }
+        print(_IsLocked);
+     
     }
 
     IEnumerator Rotate(Quaternion targetRotation)

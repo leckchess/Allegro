@@ -11,6 +11,7 @@ public class PuzzleSphere : Interactable
     public override void Interact()
     {
         base.Interact();
+        //FMODAudioManager.Instance.PlayHappyMusic();
 
         Cursor.lockState = CursorLockMode.None;
         FindObjectOfType<FirstPerson>().enabled = false;

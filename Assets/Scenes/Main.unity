@@ -9596,6 +9596,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parameter: 5
+--- !u!114 &759723323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 759723315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -231148180
+      Data2: 1086718359
+      Data3: 78670997
+      Data4: 1867465217
+    Path: event:/doorshake
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &765163565
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12348,6 +12379,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52a77879b82f78b4986aa7ab529c0f44, type: 3}
+--- !u!1 &1080133918 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2460667119137822857, guid: 301ab0f14721d7a42a305764e2eacb6b, type: 3}
+  m_PrefabInstance: {fileID: 1598709168}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1082729795
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12521,6 +12557,26 @@ PrefabInstance:
     - target: {fileID: 5006626687796711854, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6954606828692665507, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
+      propertyPath: doorEventSound.Path
+      value: event:/dooropen
+      objectReference: {fileID: 0}
+    - target: {fileID: 6954606828692665507, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
+      propertyPath: doorEventSound.Guid.Data1
+      value: -6485081
+      objectReference: {fileID: 0}
+    - target: {fileID: 6954606828692665507, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
+      propertyPath: doorEventSound.Guid.Data2
+      value: 1280237588
+      objectReference: {fileID: 0}
+    - target: {fileID: 6954606828692665507, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
+      propertyPath: doorEventSound.Guid.Data3
+      value: -182242636
+      objectReference: {fileID: 0}
+    - target: {fileID: 6954606828692665507, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
+      propertyPath: doorEventSound.Guid.Data4
+      value: 2062219753
       objectReference: {fileID: 0}
     - target: {fileID: 7148737002954343278, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -12793,6 +12849,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4728430885359089554, guid: 301ab0f14721d7a42a305764e2eacb6b, type: 3}
   m_PrefabInstance: {fileID: 1598709168}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1110082034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1080133918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1822559285
+      Data2: 1210326883
+      Data3: 511412635
+      Data4: -1804127411
+    Path: event:/monster
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!4 &1115153099 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 806841397238105241, guid: 52a77879b82f78b4986aa7ab529c0f44, type: 3}
@@ -18998,7 +19085,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2460667119137822857, guid: 301ab0f14721d7a42a305764e2eacb6b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1110082034}
   m_SourcePrefab: {fileID: 100100000, guid: 301ab0f14721d7a42a305764e2eacb6b, type: 3}
 --- !u!1001 &1601772361
 PrefabInstance:
@@ -20360,23 +20450,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6954606828692665507, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
       propertyPath: doorEventSound.Path
-      value: event:/doorshake
+      value: event:/dooropen
       objectReference: {fileID: 0}
     - target: {fileID: 6954606828692665507, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
       propertyPath: doorEventSound.Guid.Data1
-      value: -231148180
+      value: -6485081
       objectReference: {fileID: 0}
     - target: {fileID: 6954606828692665507, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
       propertyPath: doorEventSound.Guid.Data2
-      value: 1086718359
+      value: 1280237588
       objectReference: {fileID: 0}
     - target: {fileID: 6954606828692665507, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
       propertyPath: doorEventSound.Guid.Data3
-      value: 78670997
+      value: -182242636
       objectReference: {fileID: 0}
     - target: {fileID: 6954606828692665507, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
       propertyPath: doorEventSound.Guid.Data4
-      value: 1867465217
+      value: 2062219753
       objectReference: {fileID: 0}
     - target: {fileID: 7148737002954343278, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -20416,6 +20506,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4850029196796036176, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
       insertIndex: -1
       addedObject: {fileID: 759723322}
+    - targetCorrespondingSourceObject: {fileID: 4850029196796036176, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 759723323}
   m_SourcePrefab: {fileID: 100100000, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
 --- !u!4 &1712455645 stripped
 Transform:

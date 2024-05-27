@@ -23,5 +23,10 @@ public class ChangeSoundParameter : MonoBehaviour
         if (parameter == 1) {
             FMODAudioManager.Instance.PlayFearMusic();
         }
+
+        if (parameter == 5) {
+            FMODAudioManager.Instance.PlayMonsterMusic();
+        }
+
     }
 }
