@@ -49,6 +49,13 @@ public class Door : Interactable
     public void UnLockDoor()
     {
         _IsLocked = false;
+        if (!_IsLocked)
+        {
+            if (GetComponent<ChangeSoundParameter>())
+            {
+                GetComponent<ChangeSoundParameter>().changeMusic();
+            }
+        }
     }
 
     IEnumerator Rotate(Quaternion targetRotation)
@@ -78,4 +85,5 @@ public class Door : Interactable
     {
         UnLockDoor();
     }
+
 }

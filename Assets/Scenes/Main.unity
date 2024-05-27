@@ -373,7 +373,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8943317374312640477, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1136797674}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4850029196796036176, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1555040179}
   m_SourcePrefab: {fileID: 100100000, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
 --- !u!1001 &38671009
 PrefabInstance:
@@ -2643,6 +2646,26 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6954606828692665507, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
+      propertyPath: doorEventSound.Path
+      value: event:/dooropen
+      objectReference: {fileID: 0}
+    - target: {fileID: 6954606828692665507, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
+      propertyPath: doorEventSound.Guid.Data1
+      value: -6485081
+      objectReference: {fileID: 0}
+    - target: {fileID: 6954606828692665507, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
+      propertyPath: doorEventSound.Guid.Data2
+      value: 1280237588
+      objectReference: {fileID: 0}
+    - target: {fileID: 6954606828692665507, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
+      propertyPath: doorEventSound.Guid.Data3
+      value: -182242636
+      objectReference: {fileID: 0}
+    - target: {fileID: 6954606828692665507, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
+      propertyPath: doorEventSound.Guid.Data4
+      value: 2062219753
+      objectReference: {fileID: 0}
     - target: {fileID: 7148737002954343278, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
@@ -2804,6 +2827,7 @@ GameObject:
   - component: {fileID: 257087681}
   - component: {fileID: 257087680}
   - component: {fileID: 257087679}
+  - component: {fileID: 257087682}
   m_Layer: 6
   m_Name: CollictablePuzzlePiece (1)
   m_TagString: Untagged
@@ -2847,6 +2871,7 @@ MonoBehaviour:
   _highlightMaterial: {fileID: 0}
   _renderers: []
   _puzzleId: 0
+  _musicNodeIndex: 1
 --- !u!4 &257087681
 Transform:
   m_ObjectHideFlags: 0
@@ -2864,6 +2889,39 @@ Transform:
   - {fileID: 2118632997}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -68.116, z: 0}
+--- !u!114 &257087682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257087678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 741718669
+      Data2: 1275265582
+      Data3: 1889077924
+      Data4: -569305294
+    Path: event:/notes
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params:
+  - Name: Parameter 1
+    Value: 3
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &261468290 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6807243312901206166, guid: ce416e16b7b87a34b88538b50e36b1c2, type: 3}
@@ -4767,6 +4825,26 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6954606828692665507, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
+      propertyPath: doorEventSound.Path
+      value: event:/dooropen
+      objectReference: {fileID: 0}
+    - target: {fileID: 6954606828692665507, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
+      propertyPath: doorEventSound.Guid.Data1
+      value: -6485081
+      objectReference: {fileID: 0}
+    - target: {fileID: 6954606828692665507, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
+      propertyPath: doorEventSound.Guid.Data2
+      value: 1280237588
+      objectReference: {fileID: 0}
+    - target: {fileID: 6954606828692665507, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
+      propertyPath: doorEventSound.Guid.Data3
+      value: -182242636
+      objectReference: {fileID: 0}
+    - target: {fileID: 6954606828692665507, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
+      propertyPath: doorEventSound.Guid.Data4
+      value: 2062219753
+      objectReference: {fileID: 0}
     - target: {fileID: 7148737002954343278, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
@@ -4806,7 +4884,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6954606828692665507, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
   m_PrefabInstance: {fileID: 38394271}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1555040177}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eeaba225eade7864fa9a3406184d1fc7, type: 3}
@@ -7096,6 +7174,26 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6954606828692665507, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
+      propertyPath: doorEventSound.Path
+      value: event:/dooropen
+      objectReference: {fileID: 0}
+    - target: {fileID: 6954606828692665507, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
+      propertyPath: doorEventSound.Guid.Data1
+      value: -6485081
+      objectReference: {fileID: 0}
+    - target: {fileID: 6954606828692665507, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
+      propertyPath: doorEventSound.Guid.Data2
+      value: 1280237588
+      objectReference: {fileID: 0}
+    - target: {fileID: 6954606828692665507, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
+      propertyPath: doorEventSound.Guid.Data3
+      value: -182242636
+      objectReference: {fileID: 0}
+    - target: {fileID: 6954606828692665507, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
+      propertyPath: doorEventSound.Guid.Data4
+      value: 2062219753
+      objectReference: {fileID: 0}
     - target: {fileID: 7148737002954343278, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
@@ -8276,6 +8374,7 @@ GameObject:
   - component: {fileID: 674571460}
   - component: {fileID: 674571459}
   - component: {fileID: 674571458}
+  - component: {fileID: 674571461}
   m_Layer: 6
   m_Name: CollictablePuzzlePiece (3)
   m_TagString: Untagged
@@ -8319,6 +8418,7 @@ MonoBehaviour:
   _highlightMaterial: {fileID: 0}
   _renderers: []
   _puzzleId: 0
+  _musicNodeIndex: 3
 --- !u!4 &674571460
 Transform:
   m_ObjectHideFlags: 0
@@ -8336,6 +8436,39 @@ Transform:
   - {fileID: 469647103}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -43.469, z: 0}
+--- !u!114 &674571461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674571457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 741718669
+      Data2: 1275265582
+      Data3: 1889077924
+      Data4: -569305294
+    Path: event:/notes
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params:
+  - Name: Parameter 1
+    Value: 1
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &677510052
 GameObject:
   m_ObjectHideFlags: 0
@@ -9450,6 +9583,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &759723322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 759723315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6651238c217db48ed914bf4efc174067, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameter: 5
 --- !u!1001 &765163565
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9554,6 +9700,7 @@ GameObject:
   - component: {fileID: 813183902}
   - component: {fileID: 813183901}
   - component: {fileID: 813183900}
+  - component: {fileID: 813183903}
   m_Layer: 6
   m_Name: CollictablePuzzlePiece (2)
   m_TagString: Untagged
@@ -9597,6 +9744,7 @@ MonoBehaviour:
   _highlightMaterial: {fileID: 0}
   _renderers: []
   _puzzleId: 0
+  _musicNodeIndex: 2
 --- !u!4 &813183902
 Transform:
   m_ObjectHideFlags: 0
@@ -9614,6 +9762,39 @@ Transform:
   - {fileID: 829033082}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 8.261, y: -0.225, z: 11.984}
+--- !u!114 &813183903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 813183899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 741718669
+      Data2: 1275265582
+      Data3: 1889077924
+      Data4: -569305294
+    Path: event:/notes
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params:
+  - Name: Parameter 1
+    Value: 2
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!4 &817736656 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2a704acc68d50764d96a221bb76ee9f2, type: 3}
@@ -14350,6 +14531,26 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6954606828692665507, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
+      propertyPath: doorEventSound.Path
+      value: event:/dooropen
+      objectReference: {fileID: 0}
+    - target: {fileID: 6954606828692665507, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
+      propertyPath: doorEventSound.Guid.Data1
+      value: -6485081
+      objectReference: {fileID: 0}
+    - target: {fileID: 6954606828692665507, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
+      propertyPath: doorEventSound.Guid.Data2
+      value: 1280237588
+      objectReference: {fileID: 0}
+    - target: {fileID: 6954606828692665507, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
+      propertyPath: doorEventSound.Guid.Data3
+      value: -182242636
+      objectReference: {fileID: 0}
+    - target: {fileID: 6954606828692665507, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
+      propertyPath: doorEventSound.Guid.Data4
+      value: 2062219753
+      objectReference: {fileID: 0}
     - target: {fileID: 7148737002954343278, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
@@ -15253,6 +15454,26 @@ PrefabInstance:
     - target: {fileID: 5006626687796711854, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6954606828692665507, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
+      propertyPath: doorEventSound.Path
+      value: event:/dooropen
+      objectReference: {fileID: 0}
+    - target: {fileID: 6954606828692665507, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
+      propertyPath: doorEventSound.Guid.Data1
+      value: -6485081
+      objectReference: {fileID: 0}
+    - target: {fileID: 6954606828692665507, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
+      propertyPath: doorEventSound.Guid.Data2
+      value: 1280237588
+      objectReference: {fileID: 0}
+    - target: {fileID: 6954606828692665507, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
+      propertyPath: doorEventSound.Guid.Data3
+      value: -182242636
+      objectReference: {fileID: 0}
+    - target: {fileID: 6954606828692665507, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
+      propertyPath: doorEventSound.Guid.Data4
+      value: 2062219753
       objectReference: {fileID: 0}
     - target: {fileID: 7148737002954343278, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -16594,6 +16815,7 @@ GameObject:
   - component: {fileID: 1503083606}
   - component: {fileID: 1503083607}
   - component: {fileID: 1503083608}
+  - component: {fileID: 1503083609}
   m_Layer: 6
   m_Name: CollictablePuzzlePiece
   m_TagString: Untagged
@@ -16633,6 +16855,7 @@ MonoBehaviour:
   _highlightMaterial: {fileID: 0}
   _renderers: []
   _puzzleId: 0
+  _musicNodeIndex: 0
 --- !u!135 &1503083608
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -16654,6 +16877,39 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 3.15
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1503083609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1503083601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 741718669
+      Data2: 1275265582
+      Data3: 1889077924
+      Data4: -569305294
+    Path: event:/notes
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params:
+  - Name: Parameter 1
+    Value: 0
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &1505427878
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16753,6 +17009,26 @@ PrefabInstance:
     - target: {fileID: 5006626687796711854, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6954606828692665507, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
+      propertyPath: doorEventSound.Path
+      value: event:/dooropen
+      objectReference: {fileID: 0}
+    - target: {fileID: 6954606828692665507, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
+      propertyPath: doorEventSound.Guid.Data1
+      value: -6485081
+      objectReference: {fileID: 0}
+    - target: {fileID: 6954606828692665507, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
+      propertyPath: doorEventSound.Guid.Data2
+      value: 1280237588
+      objectReference: {fileID: 0}
+    - target: {fileID: 6954606828692665507, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
+      propertyPath: doorEventSound.Guid.Data3
+      value: -182242636
+      objectReference: {fileID: 0}
+    - target: {fileID: 6954606828692665507, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
+      propertyPath: doorEventSound.Guid.Data4
+      value: 2062219753
       objectReference: {fileID: 0}
     - target: {fileID: 7148737002954343278, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -17733,6 +18009,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 94ed824c828b6934d8bd6a519498e8f5, type: 3}
   m_PrefabInstance: {fileID: 1700356104}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1555040177 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4850029196796036176, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
+  m_PrefabInstance: {fileID: 38394271}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1555040179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1555040177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6651238c217db48ed914bf4efc174067, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameter: 1
 --- !u!1001 &1557134273
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17832,6 +18126,26 @@ PrefabInstance:
     - target: {fileID: 5006626687796711854, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6954606828692665507, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
+      propertyPath: doorEventSound.Path
+      value: event:/dooropen
+      objectReference: {fileID: 0}
+    - target: {fileID: 6954606828692665507, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
+      propertyPath: doorEventSound.Guid.Data1
+      value: -6485081
+      objectReference: {fileID: 0}
+    - target: {fileID: 6954606828692665507, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
+      propertyPath: doorEventSound.Guid.Data2
+      value: 1280237588
+      objectReference: {fileID: 0}
+    - target: {fileID: 6954606828692665507, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
+      propertyPath: doorEventSound.Guid.Data3
+      value: -182242636
+      objectReference: {fileID: 0}
+    - target: {fileID: 6954606828692665507, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
+      propertyPath: doorEventSound.Guid.Data4
+      value: 2062219753
       objectReference: {fileID: 0}
     - target: {fileID: 7148737002954343278, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -18786,6 +19100,26 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6954606828692665507, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
+      propertyPath: doorEventSound.Path
+      value: event:/dooropen
+      objectReference: {fileID: 0}
+    - target: {fileID: 6954606828692665507, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
+      propertyPath: doorEventSound.Guid.Data1
+      value: -6485081
+      objectReference: {fileID: 0}
+    - target: {fileID: 6954606828692665507, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
+      propertyPath: doorEventSound.Guid.Data2
+      value: 1280237588
+      objectReference: {fileID: 0}
+    - target: {fileID: 6954606828692665507, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
+      propertyPath: doorEventSound.Guid.Data3
+      value: -182242636
+      objectReference: {fileID: 0}
+    - target: {fileID: 6954606828692665507, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
+      propertyPath: doorEventSound.Guid.Data4
+      value: 2062219753
+      objectReference: {fileID: 0}
     - target: {fileID: 7148737002954343278, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
@@ -19062,6 +19396,7 @@ GameObject:
   - component: {fileID: 1629831259}
   - component: {fileID: 1629831258}
   - component: {fileID: 1629831261}
+  - component: {fileID: 1629831262}
   m_Layer: 0
   m_Name: Floor
   m_TagString: Untagged
@@ -19155,6 +19490,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 10, y: 2.220446e-16, z: 10}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1629831262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1629831257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6651238c217db48ed914bf4efc174067, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameter: 0
 --- !u!4 &1637683501 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7568927430512463233, guid: 2d87e9d4e168bd04082240de8a6f8d03, type: 3}
@@ -20010,6 +20358,26 @@ PrefabInstance:
       propertyPath: _IsLocked
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6954606828692665507, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
+      propertyPath: doorEventSound.Path
+      value: event:/doorshake
+      objectReference: {fileID: 0}
+    - target: {fileID: 6954606828692665507, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
+      propertyPath: doorEventSound.Guid.Data1
+      value: -231148180
+      objectReference: {fileID: 0}
+    - target: {fileID: 6954606828692665507, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
+      propertyPath: doorEventSound.Guid.Data2
+      value: 1086718359
+      objectReference: {fileID: 0}
+    - target: {fileID: 6954606828692665507, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
+      propertyPath: doorEventSound.Guid.Data3
+      value: 78670997
+      objectReference: {fileID: 0}
+    - target: {fileID: 6954606828692665507, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
+      propertyPath: doorEventSound.Guid.Data4
+      value: 1867465217
+      objectReference: {fileID: 0}
     - target: {fileID: 7148737002954343278, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
@@ -20045,6 +20413,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4850029196796036176, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
       insertIndex: -1
       addedObject: {fileID: 759723319}
+    - targetCorrespondingSourceObject: {fileID: 4850029196796036176, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 759723322}
   m_SourcePrefab: {fileID: 100100000, guid: 59a89ae8f5e026241adcd70e4eb77408, type: 3}
 --- !u!4 &1712455645 stripped
 Transform:
@@ -22378,7 +22749,9 @@ MonoBehaviour:
   TriggerOnce: 0
   Preload: 0
   AllowNonRigidbodyDoppler: 0
-  Params: []
+  Params:
+  - Name: Mselector
+    Value: 0
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
