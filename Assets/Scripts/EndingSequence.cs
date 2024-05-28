@@ -3,8 +3,6 @@ using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
-using static UnityEditor.Experimental.GraphView.GraphView;
-
 public class EndingSequence : MonoBehaviour
 {
     [SerializeField] private Vector3 _targetLocalCameraPosition;
