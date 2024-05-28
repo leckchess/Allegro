@@ -10,10 +10,16 @@ public class Laptop : Interactable
     [SerializeField] private UnityEvent _onOnlineCallEnded;
     [SerializeField] private EventReference laptopOpenEventMusic;
     [SerializeField] private EventReference laptopCloseEventMusic;
+    [SerializeField] private EventReference VOEvent;
+
+    [SerializeField] private AudioClip _voiceOverAudio;
+
+    private AudioSource _voiceOverAudioSource;
 
     private void Awake()
     {
         _animator = GetComponent<Animator>();
+        _voiceOverAudioSource = gameObject.AddComponent<AudioSource>();
     }
 
     public override void Interact()
@@ -42,5 +48,10 @@ public class Laptop : Interactable
         if (_animator == null) { return; }
 
         _animator.SetTrigger("Activate");
+    }
+
+    public void PlayAudio()
+    {
+        RuntimeManager.PlayOneShot(VOEvent);
     }
 }

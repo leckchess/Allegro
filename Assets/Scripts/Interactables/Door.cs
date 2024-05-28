@@ -12,6 +12,7 @@ public class Door : Interactable
     [SerializeField] private bool _IsLocked = false;
     [SerializeField] private GameObject _Arrow;
     [SerializeField] private EventReference doorEventSound;
+    [SerializeField] private EventReference VOSound;
 
     private Quaternion _openRotation;
     private Coroutine _rotationCoroutine;
@@ -20,6 +21,15 @@ public class Door : Interactable
     {
         _openRotation = Quaternion.Euler(0, 90, 0);
         _door.localRotation = _isOpen ? _openRotation : Quaternion.identity;
+    }
+
+    public override void OnHover()
+    {
+        if (_IsLocked == true) { return; }
+
+        base.OnHover();
+
+        RuntimeManager.PlayOneShot(VOSound);
     }
 
     public override void Interact()

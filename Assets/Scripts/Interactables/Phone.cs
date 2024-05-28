@@ -14,8 +14,7 @@ public class Phone : Interactable
     [SerializeField]  private EventReference phonePickUpEvent;
     [SerializeField]  private EventReference phoneUIDialogeEvent;
     [SerializeField]  private EventReference phoneCutEvent;
-
-
+    [SerializeField]  private EventReference VOEvent;
 
     private void Awake()
     {
@@ -48,5 +47,10 @@ public class Phone : Interactable
         RuntimeManager.PlayOneShot(phoneCutEvent);
 
         OnPhoneCallEnded.Invoke();
+    }
+
+    public void PlayAudio()
+    {
+        RuntimeManager.PlayOneShot(VOEvent);
     }
 }

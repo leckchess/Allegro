@@ -1,5 +1,32 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8914610389597515325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/dilogues/NOLAN VO2
+  m_EditorClassIdentifier: 
+  Path: event:/dilogues/NOLAN VO2
+  Guid:
+    Data1: 114105930
+    Data2: 1267860203
+    Data3: 1293363094
+    Data4: -673969801
+  Banks:
+  - {fileID: -8587795892275786888}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5543
 --- !u!114 &-8587795892275786888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15,7 +42,7 @@ MonoBehaviour:
   Path: Assets/FMOD-Banks/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638524609520000000
+  lastModified: 638524631464042798
   FileSizes: []
   Exists: 1
 --- !u!114 &-8365062356199219795
@@ -45,6 +72,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 13009
+--- !u!114 &-7816657956801097995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/dilogues/NOLAN VO1
+  m_EditorClassIdentifier: 
+  Path: event:/dilogues/NOLAN VO1
+  Guid:
+    Data1: -642212672
+    Data2: 1320149224
+    Data3: -30037094
+    Data4: 526538996
+  Banks:
+  - {fileID: -8587795892275786888}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 18466
 --- !u!114 &-6760552770492876470
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60,10 +114,10 @@ MonoBehaviour:
   Path: Assets/FMOD-Banks/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638524609520000000
+  lastModified: 638524631464082807
   FileSizes:
   - Name: 
-    Value: 2064
+    Value: 2394
   Exists: 1
 --- !u!114 &-6245633408288102823
 MonoBehaviour:
@@ -200,7 +254,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 2774
+  Length: 1451
 --- !u!114 &-1841096084985521758
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -344,12 +398,18 @@ MonoBehaviour:
   - {fileID: 6073064987631982140}
   - {fileID: -4146132458334707675}
   - {fileID: -5968498583750320945}
+  - {fileID: -8914610389597515325}
+  - {fileID: 8458173384053606228}
+  - {fileID: 5912760531655589777}
+  - {fileID: -7816657956801097995}
+  - {fileID: 2284561790436937622}
+  - {fileID: 2590829769190637255}
   EditorParameters: []
   MasterBanks:
   - {fileID: -8587795892275786888}
   StringsBanks:
   - {fileID: -6760552770492876470}
-  cacheTime: 638524609520000000
+  cacheTime: 638524631466413307
   cacheVersion: 131618
 --- !u!114 &199833896848903925
 MonoBehaviour:
@@ -430,6 +490,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 8543
+--- !u!114 &2284561790436937622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/dilogues/NOLAN VO3
+  m_EditorClassIdentifier: 
+  Path: event:/dilogues/NOLAN VO3
+  Guid:
+    Data1: 1090125007
+    Data2: 1074051202
+    Data3: 1695903643
+    Data4: -959641710
+  Banks:
+  - {fileID: -8587795892275786888}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 10158
 --- !u!114 &2586925438551887300
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -457,6 +544,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 19812
+--- !u!114 &2590829769190637255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/dilogues/VO1
+  m_EditorClassIdentifier: 
+  Path: event:/dilogues/VO1
+  Guid:
+    Data1: 1324107736
+    Data2: 1251574536
+    Data3: 365759142
+    Data4: -1962496469
+  Banks:
+  - {fileID: -8587795892275786888}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 17081
 --- !u!114 &3204815261570326488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -580,7 +694,7 @@ MonoBehaviour:
   Path: Assets/FMOD-Banks/music.bank
   Name: music
   StudioPath: bank:/music
-  lastModified: 638524609520000000
+  lastModified: 638524631464672922
   FileSizes: []
   Exists: 1
 --- !u!114 &4830737601431620512
@@ -607,6 +721,33 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &5912760531655589777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/dilogues/VO2
+  m_EditorClassIdentifier: 
+  Path: event:/dilogues/VO2
+  Guid:
+    Data1: 651356318
+    Data2: 1169831556
+    Data3: 1289295281
+    Data4: -550973690
+  Banks:
+  - {fileID: -8587795892275786888}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3439
 --- !u!114 &6073064987631982140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -731,6 +872,33 @@ MonoBehaviour:
   Path: Assets/FMOD-Banks/sfx.bank
   Name: sfx
   StudioPath: bank:/sfx
-  lastModified: 638524609520000000
+  lastModified: 638524631466413307
   FileSizes: []
   Exists: 1
+--- !u!114 &8458173384053606228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/dilogues/VO3
+  m_EditorClassIdentifier: 
+  Path: event:/dilogues/VO3
+  Guid:
+    Data1: 67791762
+    Data2: 1218004349
+    Data3: 3329727
+    Data4: -1814516230
+  Banks:
+  - {fileID: -8587795892275786888}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2966

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MainMenu : Window
@@ -10,7 +11,7 @@ public class MainMenu : Window
     {
         _playButton.onClick.AddListener(() => 
         {
-            Close();
+            SceneManager.LoadScene(1);
         });
     }
 }
