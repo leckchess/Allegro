@@ -8,6 +8,7 @@ public class PuzzleController : MonoBehaviour
         [SerializeField] private Puzzle _puzzle;
         [SerializeField] private PuzzlesData _data;
         [SerializeField] private UnityEvent<int> _onPuzzlePiecesCollected;
+        [SerializeField] private UnityEvent _onPuzzlePieceCollected;
 
         private Dictionary<int, int> _collectedPieces = new Dictionary<int, int>();
 
@@ -18,6 +19,8 @@ public class PuzzleController : MonoBehaviour
 
         private void OnPieceCollected(int puzzleId)
         {
+            _onPuzzlePieceCollected.Invoke();
+
             if (_collectedPieces.ContainsKey(puzzleId))
             {
                 _collectedPieces[puzzleId]++;
